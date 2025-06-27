@@ -66,15 +66,15 @@
               <div class="row">
                 <div class="col-12 col-xl-6">
                   <div class="form-label-container">
-                    <label for="fullname" class="form-label"
+                    <label for="domainname" class="form-label"
                       >Nombre del dominio</label
                     >
                   </div>
                   <input
                     type="text"
                     class="form-control"
-                    id="fullname"
-                    name="fullname"
+                    id="domainname"
+                    name="domainname"
                   />
                 </div>
               </div>
@@ -139,29 +139,39 @@
               <div class="row">
                 <div class="col-12 col-xl-6">
                   <div class="form-label-container">
-                    <label for="fullname" class="form-label"
+                    <label for="type_doc" class="form-label"
                       >Tipo de documento</label
                     >
                   </div>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="fullname"
-                    name="fullname"
-                  />
+                  <select
+                    class="form-control form-select"
+                    id="type_doc"
+                    name="type_doc"
+                    aria-label="Default select example"
+                  >
+                    <option selected="" disabled="">Seleccionar…</option>
+                    <option value="dni">DNI</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
                 </div>
-                <div class="col-12 col-xl-6">
-                  <div class="form-label-container mt-3 mt-lg-0">
-                    <label for="fullname" class="form-label"
+                <div class="col-12 mt-3 mt-lg-0 col-xl-6">
+                  <div class="form-label-container">
+                    <label for="nro_dni" class="form-label"
                       >Número de documento</label
                     >
                   </div>
                   <input
                     type="text"
                     class="form-control"
-                    id="fullname"
-                    name="fullname"
+                    id="nro_dni"
+                    name="nro_dni"
+                    aria-describedby="Text"
                   />
+                  <p class="form-label-description">
+                    Ingresá solo números, sin puntos ni guiones.
+                  </p>
                 </div>
               </div>
               <!-- documento legal -->
@@ -251,29 +261,39 @@
               <div class="row">
                 <div class="col-12 col-xl-6">
                   <div class="form-label-container">
-                    <label for="fullname" class="form-label"
+                    <label for="type_doc" class="form-label"
                       >Tipo de documento</label
                     >
                   </div>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="fullname"
-                    name="fullname"
-                  />
+                  <select
+                    class="form-control form-select"
+                    id="type_doc"
+                    name="type_doc"
+                    aria-label="Default select example"
+                  >
+                    <option selected="" disabled="">Seleccionar…</option>
+                    <option value="dni">DNI</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
                 </div>
-                <div class="col-12 col-xl-6">
-                  <div class="form-label-container mt-3 mt-lg-0">
-                    <label for="fullname" class="form-label"
+                <div class="col-12 mt-3 mt-lg-0 col-xl-6">
+                  <div class="form-label-container">
+                    <label for="nro_dni" class="form-label"
                       >Número de documento</label
                     >
                   </div>
                   <input
                     type="text"
                     class="form-control"
-                    id="fullname"
-                    name="fullname"
+                    id="nro_dni"
+                    name="nro_dni"
+                    aria-describedby="Text"
                   />
+                  <p class="form-label-description">
+                    Ingresá solo números, sin puntos ni guiones.
+                  </p>
                 </div>
               </div>
               <!-- documento legal -->
@@ -336,16 +356,24 @@
               <div class="row">
                 <div class="col-12 col-xl-6">
                   <div class="form-label-container">
-                    <label for="fullname" class="form-label"
-                      >Tipo de la organización</label
+                    <label for="type_doc" class="form-label"
+                      >Tipo de organización</label
                     >
                   </div>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="fullname"
-                    name="fullname"
-                  />
+                  <select
+                    class="form-control form-select"
+                    id="type_doc"
+                    name="type_doc"
+                    aria-label="Default select example"
+                  >
+                    <option selected="" disabled="">Seleccionar…</option>
+                    <option value="provincia">Sistema provincial</option>
+                    <option value="institución">
+                      Establecimientos asistencial
+                    </option>
+                    <option value="obra social">Obras social y prepaga</option>
+                    <option value="farmacia">Farmacia</option>
+                  </select>
                 </div>
                 <div class="col-12 col-xl-6">
                   <div class="form-label-container mt-3 mt-lg-0">
@@ -423,7 +451,7 @@
           </div>
           <!-- Persona jurídica -->
 
-          <button type="submit" class="btn btn-primary mt-4 mb-5">
+          <button type="submit" class="btn btn-primary btn-lg mt-4 mb-5">
             Registrar nuevo dominio
           </button>
         </form>
